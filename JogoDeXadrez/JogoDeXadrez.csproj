@@ -52,6 +52,7 @@
     <Compile Include="Tela.cs" />
     <Compile Include="xadrez\Bispo.cs" />
     <Compile Include="xadrez\Cavalo.cs" />
+    <Compile Include="xadrez\PartidaDeXarez.cs" />
     <Compile Include="xadrez\Peao.cs" />
     <Compile Include="xadrez\PosicaoXadrez.cs" />
     <Compile Include="xadrez\Rainha.cs" />
