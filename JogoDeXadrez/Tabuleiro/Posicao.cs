@@ -15,5 +15,11 @@
         {
             return "Posição: (" + linha + "," + coluna + ")";
         }
+
+        public void definirValores(int linha, int coluna)
+        {
+            this.linha = linha;
+            this.coluna = coluna;
+        }
     }
 }

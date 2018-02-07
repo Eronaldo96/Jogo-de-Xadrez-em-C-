@@ -2,7 +2,7 @@
 
 namespace xadrez
 {
-    class Rainha : Peca
+    abstract class Rainha : Peca
     {
         public Rainha(Cor cor, Tabuleiro tab) : base(cor, tab)
         {

@@ -2,7 +2,7 @@
 
 namespace xadrez
 {
-    class Bispo : Peca
+    abstract class Bispo : Peca
     {
         public Bispo(Cor cor, Tabuleiro tab) : base(cor, tab)
         {
