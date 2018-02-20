@@ -7,7 +7,7 @@
         public int qteMovimentos { get; protected set; }
         public Tabuleiro tab { get; protected set; }
 
-        public Peca(Cor cor,Tabuleiro tab)
+        public Peca(Cor cor, Tabuleiro tab)
         {
             this.posicao = null;
             this.cor = cor;
@@ -21,6 +21,27 @@
         }
 
         public abstract bool[,] movimentosPossiveis();
-        
+
+        public bool podeMoverPara(Posicao pos)
+        {
+            return movimentosPossiveis()[pos.linha, pos.coluna];
+        }
+
+        public bool existeMovimentosPossiveis()
+        {
+            bool[,] mat = movimentosPossiveis();
+            for (int i = 0; i < tab.linhas; i++)
+            {
+                for (int j = 0; j < tab.colunas; j++)
+                {
+                    if (mat[i, j])
+                    {
+                        return true;
+                    }
+
+                }
+            }
+            return false;
+        }
     }
 }
